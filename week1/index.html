@@ -36,13 +36,15 @@
                     <div class="card">
                       <div class="card-header" id="headingOne">
                           <i class="far fa-square"></i>
-                        <h5>Type Something Here...</h5>
+                          <form><input class="title" type="text" placeholder="Type Something Here..."> 
+                          </form>
+                            
                         <i class="far fa-star"></i>
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <i class="far fa-edit"></i>                            
                         </button>                        
                       </div>
-                  
+                  <!-- 內容 -->
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             <!-- deadline -->
@@ -55,43 +57,70 @@
                             <!-- comment -->
                             <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          
-
-                        </div>
+                            </div>
+                            <!-- button -->
+                            <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
+                            <button class="addtaskbutton" type="button"><i class="fas fa-plus"></i>addtask</button>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                           <i class="far fa-square"></i>
-                          <h5>Type Something Here...</h5>
-                          <i class="far fa-star"></i>
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              <i class="far fa-edit"></i>   
-                          </button>
-                       
+                          <form><input class="title" type="text" placeholder="Type Something Here..."> 
+                          </form>
+                            
+                        <i class="far fa-star"></i>
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="far fa-edit"></i>                            
+                        </button>                        
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
+                    <!-- deadline -->
+                    <div><i class="far fa-calendar-alt"></i><h6>Deadline</h6></div>
+                    <div class="date"><input type="date" id="date"><input type="time" id="time"></div>
+                    <!-- file -->
+                    <div><i class="far fa-file"></i><h6>File</h6></div>
+                    <div><label for="exampleFormControlFile1"><i class="fas fa-plus-square fa-2x"></i></label></div>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <!-- comment -->
+                    <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+                    <!-- button -->
+                    <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
+                    <button class="addtaskbutton" type="button"><i class="fas fa-plus"></i>addtask</button>
+              </div>
+            </div>
                     <div class="card">
                       <div class="card-header" id="headingThree">
                           <i class="far fa-square"></i>
-                          <h5>Type Something Here...</h5>
-                          <i class="far fa-star"></i>
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              <i class="far fa-edit"></i> 
-                          </button>
-                        
+                          <form><input class="title" type="text" placeholder="Type Something Here..."> 
+                          </form>
+                            
+                        <i class="far fa-star"></i>
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="far fa-edit"></i>                            
+                        </button>                        
                       </div>
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
+                    <!-- deadline -->
+                    <div><i class="far fa-calendar-alt"></i><h6>Deadline</h6></div>
+                    <div class="date"><input type="date" id="date"><input type="time" id="time"></div>
+                    <!-- file -->
+                    <div><i class="far fa-file"></i><h6>File</h6></div>
+                    <div><label for="exampleFormControlFile1"><i class="fas fa-plus-square fa-2x"></i></label></div>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <!-- comment -->
+                    <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+                    <!-- button -->
+                    <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
+                    <button class="addtaskbutton" type="button"><i class="fas fa-plus"></i>addtask</button>
+              </div>
+            </div>
                   </div>
              </div>
             </div>

@@ -1,3 +1,7 @@
+
+body{
+    background-color: #e1e1e1;
+}
 nav ul {
     width: 100%;
     height: 50px;
@@ -7,9 +11,16 @@ nav a {
     font-size: 20px;
     color: #727287;
 }
-/* 摺疊 */
+nav a:hover {
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 5px solid #727287;
+}
+
+
+/* 摺疊標題 */
 #accordion {
-    width: 480px;
+    width:480px;
     padding-top: 10px;
     margin:auto;
 }
@@ -20,25 +31,33 @@ nav a {
 
 .fa-square{
     float: left;
-    margin: 5px 12px 0px 0px;
+    margin: 10px 12px 0px 0px;
     color: #727287;
 }
-.card h5{
+input.title{
+    background-color: #fff0;
+    border-color: #fff0;
     float: left;
-    font-size: 19px;
+    font-size: 18px;
     color:#727287;
 }
+
 .fa-star{
     float: left;
-    margin: 5px 10px 0px 120px;
+    margin:  10px 10px 0px 150px;
     color: #727287;
 }
 .fa-edit{
     float: right;
     color:#727287;
-    margin-top: -3px;
+    margin-top: 3px;
 }
 
+/* 摺疊內容 */
+
+.card-body{
+    background-color: #f2f2f2;
+}
 #date{
     margin: 0px 10px 0px 20px;
 }
@@ -67,4 +86,26 @@ display: none;
 {
     float: left;
     margin: 2px 10px 0px 0px;
+}
+button.cancelbutton{
+    float: left;
+    width: 50%;
+    height: 40px;
+    background-color: #fff;
+    color: #ff0000;
+    border-color: #fff;
+}
+button.addtaskbutton{
+    float: left;
+    width: 50%;
+    height: 40px;
+    background-color: #bbbcde;
+    color: #fff;
+    border-color: #fff;
+}
+.fa-times{
+    margin-right: 20px;
+}
+.fa-plus{
+    margin-right: 20px;
 }
