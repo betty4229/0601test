@@ -1,4 +1,14 @@
 
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Marmelad', sans-serif;
+    font-family: 'Unna', serif;
+    font-family: 'Baloo', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
 body{
     background-color: #e1e1e1;
 }
@@ -38,13 +48,13 @@ input.title{
     background-color: #fff0;
     border-color: #fff0;
     float: left;
-    font-size: 18px;
+    font-size: 19px;
     color:#727287;
 }
 
 .fa-star{
     float: left;
-    margin:  10px 10px 0px 150px;
+    margin:  10px 0px 0px 140px;
     color: #727287;
 }
 .fa-edit{
