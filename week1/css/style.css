@@ -17,15 +17,15 @@ nav ul {
     height: 50px;
     background-color: #bbbcde;
 }
-nav a {
+.nav-item a {
     font-size: 20px;
     color: #727287;
 }
-nav a:hover {
+.nav-item a:hover {
     color: #fff;
     border-bottom: 5px solid #727287;
 }
-.nav-item a:visited{
+.nav-item:visited{
     font-size: 20px;
     color: #fff;
     border-bottom: 5px solid #727287;
@@ -56,17 +56,28 @@ input.title{
     font-size: 17px;
     color:#727287;
 }
-
-.fa-star{
-    float: left;
-    margin:  10px 0px 0px 140px;
-    color: #727287;
-}
 .fa-edit{
     float: right;
     color:#727287;
-    margin-top: 3px;
+    margin: 0px;
 }
+.fa-star{
+    float: left;
+    margin:  0px;
+    color: #727287;
+    margin:  7px 10px 0px 140px;
+}
+
+/* 備註 */
+.note{
+    margin: 5px 0px 0px 28px;
+    height: 10px;
+    color: #757575;
+    font-size: 8px;
+}
+
+
+
 
 /* 摺疊內容 */
 
@@ -139,7 +150,7 @@ button.addtaskbutton{
     margin: 10px 12px 0px 0px;
     float: left;
 }
-#headingThree h6{
+#headingFour h6{
     margin: 9px 114px 0px 1px;
     color:#bbbcde; 
     float: left;
@@ -154,11 +165,16 @@ button.addtaskbutton{
         height: 50px;
         background-color: #bbbcde;
     }
-    nav a {
+    .nav-item a {
         font-size: 17px;
         color: #727287;
         margin-top: 5px;
         text-align: center;
+    }
+
+    .nav-item a:hover {
+        color: #fff;
+        border-bottom: 4px solid #727287;
     }
     #accordion {
         width:100%;

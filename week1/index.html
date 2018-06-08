@@ -56,11 +56,12 @@
                             <!-- comment -->
                             <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
+                          </div>
                             <!-- button -->
                             <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
                             <button class="addtaskbutton" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-plus" ></i>addtask</button>
-                      </div>
+                            
+                            </div>
                     </div>
                     <div class="card">
                       <div class="card-header" id="headingTwo">
@@ -71,7 +72,12 @@
                         <i class="fas fa-star"></i>
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                             <i class="far fa-edit"></i>                            
-                        </button>                        
+                        </button>    
+                        <div class="note">
+                          <i class="far fa-calendar-alt"></i>
+                          <i class="far fa-file"></i>
+                          <i class="far fa-comment-dots"></i>
+                        </div>                    
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
@@ -85,20 +91,24 @@
                     <!-- comment -->
                     <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                  </div>
                     <!-- button -->
                     <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
                     <button class="addtaskbutton" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-plus"></i>addtask</button>
-              </div>
+              
+            </div>
             </div>
                     <div class="card">
                       <div class="card-header" id="headingThree">
-                          <i class="fas fa-check-square"></i>
-                          <h6>Finished!!!</h6>
-                        <i class="far fa-star"></i>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                            <i class="far fa-edit"></i>                            
-                        </button>                        
+                          <i class="far fa-square"></i>
+                          <form><input class="title" type="text" placeholder="Remember me"> 
+                            <i class="far fa-star"></i>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="far fa-edit"></i>                            
+                            </button>
+                            <div class="note">
+                               <i class="far fa-comment-dots"></i>
+                              </div>            
                       </div>
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
@@ -112,12 +122,45 @@
                     <!-- comment -->
                     <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                  </div>
                     <!-- button -->
                     <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
                     <button class="addtaskbutton" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-plus"></i>addtask</button>
-              </div>
+                    
             </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <i class="fas fa-check-square"></i>
+                    <h6>Finished!!!</h6>
+                  <i class="far fa-star"></i>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="far fa-edit"></i>                            
+                  </button>
+                  <div class="note">
+                      <i class="far fa-file"></i>
+                      <i class="far fa-comment-dots"></i>
+                    </div>                        
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+              <!-- deadline -->
+              <div><i class="far fa-calendar-alt"></i><h6>Deadline</h6></div>
+              <div class="date"><input type="date" id="date"><input type="time" id="time"></div>
+              <!-- file -->
+              <div><i class="far fa-file"></i><h6>File</h6></div>
+              <div><label for="exampleFormControlFile1"><i class="fas fa-plus-square fa-2x"></i></label></div>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <!-- comment -->
+              <div><i class="far fa-comment-dots"></i><h6>Comment</h6></div>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+              <!-- button -->
+              <button class="cancelbutton" type="button"><i class="fas fa-times"></i>Cancel</button>
+              <button class="addtaskbutton" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-plus"></i>addtask</button>
+              
+      </div>
+      </div>
                   </div>
              </div>
             </div>
