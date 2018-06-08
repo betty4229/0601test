@@ -26,9 +26,15 @@ nav a:hover {
     color: #fff;
     border-bottom: 5px solid #727287;
 }
+.nav-item a:visited{
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 5px solid #727287;
+}
 
 
 /* 摺疊標題 */
+
 #accordion {
     width:480px;
     padding-top: 10px;
@@ -118,4 +124,13 @@ button.addtaskbutton{
 }
 .fa-plus{
     margin-right: 20px;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+        
+
+    }
 }
