@@ -183,7 +183,7 @@ button.addtaskbutton{
     }
     .fa-star{
         float: left;
-        margin:  10px 0px 0px 0px;
+        margin:  10px 0px 0px 30px;
         color: #727287;
     }
     .fa-edit{
