@@ -127,10 +127,8 @@ button.addtaskbutton{
 }
 
 
-@media (min-width: 576px) {
-    .container {
-        width: 90%;
-        
-
-    }
+@media (max-width: 576px) {
+  .container{
+      width: 100%;
+  }
 }
