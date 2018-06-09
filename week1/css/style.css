@@ -25,6 +25,11 @@ nav ul {
     color: #fff;
     border-bottom: 5px solid #727287;
 }
+.nav-item a:focus  {
+    color: #fff;
+    border-bottom: 5px solid #727287;
+}
+
 
 /* 摺疊標題 */
 
@@ -38,12 +43,7 @@ nav ul {
     border-bottom: 2px solid #bbbcde;
 }
 
-/* .fa-square{
-    float: left;
-    margin: 10px 12px 0px 0px;
-    color: #727287;
-    
-} */
+
 input.title{
     background-color: #fff0;
     border-color: #fff0;
@@ -71,7 +71,6 @@ input.title{
     color: #757575;
     font-size: 8px;
 }
-
 
 
 
