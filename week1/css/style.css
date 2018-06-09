@@ -25,12 +25,6 @@ nav ul {
     color: #fff;
     border-bottom: 5px solid #727287;
 }
-.nav-item:visited{
-    font-size: 20px;
-    color: #fff;
-    border-bottom: 5px solid #727287;
-}
-
 
 /* 摺疊標題 */
 
@@ -44,28 +38,30 @@ nav ul {
     border-bottom: 2px solid #bbbcde;
 }
 
-.fa-square{
+/* .fa-square{
     float: left;
     margin: 10px 12px 0px 0px;
     color: #727287;
-}
+    
+} */
 input.title{
     background-color: #fff0;
     border-color: #fff0;
     float: left;
     font-size: 17px;
     color:#727287;
+    margin:-9px 0px 0px 10px;
 }
 .fa-edit{
     float: right;
     color:#727287;
-    margin: 0px;
+    margin-top: -8px;
 }
 .fa-star{
     float: left;
     margin:  0px;
     color: #727287;
-    margin:  7px 10px 0px 140px;
+    margin: 2px 10px 0px 140px;
 }
 
 /* 備註 */
@@ -136,6 +132,8 @@ button.addtaskbutton{
     margin-right: 20px;
 }
 
+
+
 /* 打星號的 */
 #headingTwo{
     background-color: #fff2dc;
@@ -144,16 +142,11 @@ button.addtaskbutton{
     color:#F5A623; 
 }
 
-/* 完成的 */
-.fas.fa-check-square{ 
-    color:#bbbcde; 
-    margin: 10px 12px 0px 0px;
-    float: left;
-}
+
 #headingFour h6{
-    margin: 9px 114px 0px 1px;
-    color:#bbbcde; 
     float: left;
+    margin: -2px 116px 5px 10px;
+    color:#bbbcde; 
     text-decoration:line-through;
 
 }
@@ -183,12 +176,118 @@ button.addtaskbutton{
     }
     .fa-star{
         float: left;
-        margin:  10px 0px 0px 30px;
+        margin: -23px 10px 0px 213px;
         color: #727287;
     }
+    /* #headingFour.fa-star{
+        float: left;
+        margin: -18px 10px 0px 213px;
+        color: #727287;
+    } */
+
     .fa-edit{
         float: right;
         color:#727287;
-        margin-top: 3px;
+        margin-top: -14px;
     }
 }
+
+
+/* 打勾 */
+
+.cb-container {
+    width: 10px;
+    margin-top: 10px;
+  }
+  
+  #checkbox1 {
+    display: none;
+  }
+  #checkbox2 {
+      display: none;
+  }
+  #checkbox3 {
+      display: none;
+  }
+  #checkbox4 {
+      display: none;
+  }
+  
+  .cb-label {
+    float: left;
+    height: 15px;
+    width: 15px;
+    background: #f9f9f9;
+    border: 1.5px solid #cfcece;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: border-color ease 0.2s;
+    -moz-transition: border-color ease 0.2s;
+    -o-transition: border-color ease 0.2s;
+    -webkit-transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  .cb-label::before, .cb-label::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: 3px;
+    background: #fff;
+    display: inline-block;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    content: "";
+    -webkit-transition: opacity ease 0.5s;
+    -moz-transition: opacity ease 0.5s;
+    transition: opacity ease 0.5s;
+  }
+  .cb-label::before {
+    top: 11.4px;
+    left: 4.65px;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .cb-label::after {
+    top: 6.75px;
+    left: 0px;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  input[type="checkbox"]:checked + .cb-label,
+  .cb-label.checked {
+    background: #bbbcde;
+    border-color: #bbbcde;
+  }
+  input[type="checkbox"]:checked + .cb-label::after,
+  .cb-label.checked::after {
+    border-color: #fff;
+    height: 5.25px;
+    -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
+    -o-animation: dothabottomcheck 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+    animation: dothabottomcheck 0.2s ease 0s forwards;
+  }
+  input[type="checkbox"]:checked + .cb-label::before,
+  .cb-label.checked::before {
+    border-color: #fff;
+    height: 15px;
+    -moz-animation: dothatopcheck 0.4s ease 0s forwards;
+    -o-animation: dothatopcheck 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+    animation: dothatopcheck 0.4s ease 0s forwards;
+  }
+  
+
