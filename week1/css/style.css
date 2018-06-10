@@ -1,5 +1,8 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 
 *{
+    
     font-family: 'Montserrat', sans-serif;
     font-family: 'Jua', sans-serif;
     font-family: 'Asap', sans-serif;
@@ -7,6 +10,7 @@
     font-family: 'Unna', serif;
     font-family: 'Baloo', cursive;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 body{
@@ -45,6 +49,7 @@ nav ul {
 
 
 input.title{
+    width: 225px;
     background-color: #fff0;
     border-color: #fff0;
     float: left;
@@ -52,21 +57,48 @@ input.title{
     color:#727287;
     margin:-9px 0px 0px 10px;
 }
+
+
+  /* 打星號 */
+
+
+  /*** basic styles ***/
+  
+  .star { 
+    float: left;
+    font-size: 18px;
+    margin: -4px -10px 0px 117px;
+  }
+  
+  /*** custom checkboxes ***/
+  
+  input[name="star"] { display:none; } /* to hide the checkbox itself */
+  input[name="star"] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+  }
+  
+  input[name="star"] + label:before { content: "\f006"; } /* unchecked icon */
+  input[name="star"] + label:before { letter-spacing: 20px; color: #727287;} /* space between checkbox and label */
+  
+  input[name="star"]:checked + label:before,
+  .stars.checked::before { content: "\f005"; } /* checked icon */
+
+  input[name="star"]:checked + label:before,
+  .stars.checked::before { letter-spacing: 20px; color:#F5A623; } /* allow space for check mark */
+
+/* 編輯 */
+
 .fa-edit{
     float: right;
     color:#727287;
-    margin-top: -8px;
-}
-.fa-star{
-    float: left;
-    margin:  0px;
-    color: #727287;
-    margin: 2px 10px 0px 140px;
+    margin: -9px 0px 0px 0px;
 }
 
 /* 備註 */
 .note{
-    margin: 5px 0px 0px 28px;
+    float: left;
+    margin: 0px 0px 10px 28px;
     height: 10px;
     color: #757575;
     font-size: 8px;
@@ -144,53 +176,12 @@ button.addtaskbutton{
 
 #headingFour h6{
     float: left;
-    margin: -2px 116px 5px 10px;
+    width: 223px;
+    margin-left: 12px;
     color:#bbbcde; 
     text-decoration:line-through;
 
 }
-
-
-@media (max-width: 576px) {
-    nav {
-        width: 100%;
-        height: 50px;
-        background-color: #bbbcde;
-    }
-    .nav-item a {
-        font-size: 17px;
-        color: #727287;
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    .nav-item a:hover {
-        color: #fff;
-        border-bottom: 4px solid #727287;
-    }
-    #accordion {
-        width:100%;
-        padding-top: 10px;
-        margin:auto;
-    }
-    .fa-star{
-        float: left;
-        margin: -23px 10px 0px 213px;
-        color: #727287;
-    }
-    /* #headingFour.fa-star{
-        float: left;
-        margin: -18px 10px 0px 213px;
-        color: #727287;
-    } */
-
-    .fa-edit{
-        float: right;
-        color:#727287;
-        margin-top: -14px;
-    }
-}
-
 
 /* 打勾 */
 
@@ -288,5 +279,41 @@ button.addtaskbutton{
     -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
     animation: dothatopcheck 0.4s ease 0s forwards;
   }
-  
 
+
+  
+@media (max-width: 576px) {
+    nav {
+        width: 100%;
+        height: 50px;
+        background-color: #bbbcde;
+    }
+    .nav-item a {
+        font-size: 17px;
+        color: #727287;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .nav-item a:hover {
+        color: #fff;
+        border-bottom: 4px solid #727287;
+    }
+    #accordion {
+        width:100%;
+        padding-top: 10px;
+        margin:auto;
+    }
+    .star { 
+    float: left;
+    font-size: 19px;
+    margin: -8px -17px 0px -7px;
+    }
+
+
+    .fa-edit{
+        float: right;
+        color:#727287;
+        margin: -16px 0px 0px -7px;
+    }
+}
