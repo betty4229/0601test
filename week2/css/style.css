@@ -1,0 +1,49 @@
+header{
+    background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* 大尺寸navbar寬 */
+
+@media (min-width: 769px){
+    .navbar{
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.logo p{
+    font-size: 24px;
+    color: #fff;
+    padding: 5px 10px 0px 10px;
+}
+
+
+.search button{
+background-color: #0000;
+color: #fff;
+border: none;
+float: left;
+padding: 13px 10px 5px 10px;
+}
+
+.search input{
+    float: left;
+    color: #fff;
+    background-color: #0000;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 13px 10px 0px 10px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff87;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff87;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff87;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff87;
+}
