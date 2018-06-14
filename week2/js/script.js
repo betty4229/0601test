@@ -1,16 +1,18 @@
-// $(function(){
-//     var navPos = $("nav").offset().top;
+$(function(){
+    var navPos = $("nav").offset().top;
 
-//     $(window).scroll(function(){
-//         $(window).scrollTop();
-//     });
-// });
+    $(window).scroll(function(){
 
-// $(function(){
-//     var navPos = $(".nav").offset().top;
+        if(window).scrollTop() > navPos){
 
-//     if($(window).scrollTop() > navPos){
-//         $(".nav".css("position","fixed");
-//      }
-//     });
-// });
+            $("nav").css("position","fixed");
+
+        }else{
+            $("nav").css("position","static");
+        }
+    });
+});
+
+$(function () {
+    $("button").html("click");
+});
