@@ -1,3 +1,7 @@
+*{
+    /* border: 1px solid #000; */
+}
+
 header{
     background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
 }
@@ -6,15 +10,16 @@ header{
 
 @media (min-width: 769px){
     .navbar{
-        width: 768px;
+        width: 800px;
         margin: 0 auto;
     }
 }
 
 .logo p{
-    font-size: 24px;
+    font-size: 30px;
     color: #fff;
-    padding: 5px 10px 0px 10px;
+    margin: 1px 10px 3px 10px;
+    font-family: 'Courgette', cursive;
 }
 
 
@@ -27,6 +32,7 @@ padding: 13px 10px 5px 10px;
 }
 
 .search input{
+    font-family: 'Questrial', sans-serif;
     float: left;
     color: #fff;
     background-color: #0000;
@@ -46,4 +52,83 @@ padding: 13px 10px 5px 10px;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #ffffff87;
+}
+
+/* 篩選按鈕 */
+.btn.btn-primary{
+    font-family: 'Questrial', sans-serif;
+    float: right;
+    margin-top: 3px;
+    background-color: #fff0;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 8px 30px;
+}
+
+.btn.btn-primary:hover{
+    background-color: #fff;
+    color: #a1c4fd;
+}
+
+
+
+@media (max-width: 575px){
+    .logo{
+    width: 50%;
+    float: left;
+}
+.filter{
+    width: 50%;
+    float: left;
+}
+}
+
+/* 篩選器 */
+.modal-dialog {
+    max-width:700px;
+}
+.modal-content{
+    background-image: linear-gradient(180deg, #a1c4fdcf 0%, #c2e9fbc9 100%);
+    background-color: #ffffff61;
+    padding:30px; 
+}
+
+.modal-header{
+    letter-spacing: 2px;
+    font-family: 'Questrial', sans-serif;
+    color: #ffffff;
+    margin-right: 5px;
+    border-bottom:1px solid #fff; 
+}
+
+.modal-header button{
+    color: #ffffff;
+}
+
+.modal-header button:hover{
+    color: #ffffff;
+}
+.modal-body h5{
+    letter-spacing: 2px;
+    font-family: 'Questrial', sans-serif;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+.col-sm-6.col-sm-6{
+    float: left;
+    padding: 0px;
+}
+
+.modal-body p {
+    letter-spacing: 2px;
+    font-family: 'Questrial', sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom:0rem;
+}
+
+@media (max-width: 575px){
+.third{
+    margin-left: 15px;
+}
 }
