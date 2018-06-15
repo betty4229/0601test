@@ -1,6 +1,9 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 *{
     /* border: 1px solid #000; */
 }
+
 
 header{
     background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -12,7 +15,6 @@ header{
     margin: 1px 10px 3px 10px;
     font-family: 'Courgette', cursive;
 }
-
 
 .search button{
 background-color: #0000;
@@ -99,11 +101,12 @@ padding: 13px 10px 5px 10px;
 }
 
 .modal-body p {
-    letter-spacing: 2px;
+    display: inline-block;
+    letter-spacing: 1px;
     font-family: 'Questrial', sans-serif;
+    font-size: 16px;
     color: #ffffff;
-    margin-top: 0;
-    margin-bottom:0rem;
+    margin: 0px 0px 0px -10px;
 }
 
 /* music type */
@@ -155,6 +158,9 @@ body{
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(36,37,38,0.08);
 }
+.info:hover{
+    box-shadow: 0 6px 20px rgba(36, 37, 38, 0.30);
+}
 .info h5{
     padding:15px 0px 0px 15px;
     font-size:18px;
@@ -172,7 +178,9 @@ body{
     color: #969696;
 }
 .info p{
-    padding:0px 0px 0px 10px;
+    padding:3px 0px 0px 10px;
+    font-size:14px;
+    letter-spacing:1px;
     float: right;
     color: #969696;
     font-family: 'Questrial', sans-serif;
@@ -211,3 +219,29 @@ body{
     padding:5px 10x;
 }
 }
+
+ /* 篩選checkbox */
+
+
+  /*** basic styles ***/
+  .check{
+    font-size: 18px;
+  }
+
+  
+  /*** custom checkboxes ***/
+  
+  input[name="check"] { display:none; } /* to hide the checkbox itself */
+  input[name="check"] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+  }
+  
+  input[name="check"] + label:before { content: "\f0c8"; } /* unchecked icon */
+  input[name="check"] + label:before { letter-spacing: 20px; color: #eeeeee;} /* space between checkbox and label */
+  
+  input[name="check"]:checked + label:before,
+  .checks.checked::before { content: "\f14a"; } /* checked icon */
+
+  input[name="check"]:checked + label:before,
+  .checks.checked::before { letter-spacing: 20px; color:#ffffff; } /* allow space for check mark */
