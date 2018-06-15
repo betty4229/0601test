@@ -6,15 +6,6 @@ header{
     background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
-/* 大尺寸navbar寬 */
-
-@media (min-width: 769px){
-    .navbar{
-        width: 800px;
-        margin: 0 auto;
-    }
-}
-
 .logo p{
     font-size: 30px;
     color: #fff;
@@ -71,18 +62,6 @@ padding: 13px 10px 5px 10px;
 }
 
 
-
-@media (max-width: 575px){
-    .logo{
-    width: 50%;
-    float: left;
-}
-.filter{
-    width: 50%;
-    float: left;
-}
-}
-
 /* 篩選器 */
 .modal-dialog {
     max-width:700px;
@@ -127,8 +106,108 @@ padding: 13px 10px 5px 10px;
     margin-bottom:0rem;
 }
 
+/* music type */
+body{
+    background-color: #f6f6f6;
+}
+
+#buttons{
+    width:100%;
+    background-color: #ffffff;
+}
+.type{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#buttons button{
+    padding:5px 30px;
+    margin: 10px 5px;
+    color: #a1c4fdcf;
+    background-color: #fff;
+    border: 1px solid #a1c4fdcf;
+    border-radius: 100px;
+}
+
+#buttons button:hover{
+    color: #fff;
+    background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 1px solid #fff;
+}
+
+#buttons button:focus{
+    color: #fff;
+    background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 1px solid #fff;
+}
+
+#imgs ul{
+    width: 100%;
+}
+#imgs li{
+    list-style-type: none;
+    width:100%;
+    padding:30px;
+}
+.info{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+}
+.info h5{
+    padding:15px 0px 0px 15px;
+    font-size:18px;
+    color: #969696;
+    font-family: 'Questrial', sans-serif;
+}
+.info h6{
+    padding:0px 0px 0px 15px;
+    font-size:16px;
+    color: #a2c4fd;
+    font-family: 'Questrial', sans-serif;
+}
+.info i{
+    padding:5px 0px 0px 15px;
+    color: #969696;
+}
+.info p{
+    padding:0px 0px 0px 10px;
+    float: right;
+    color: #969696;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+/*大尺寸navbar寬*/
+
+@media (min-width: 769px){
+    .navbar{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* 小尺寸 */
+
 @media (max-width: 575px){
+    .logo{
+    width: 50%;
+    float: left;
+}
+.filter{
+    width: 50%;
+    float: left;
+}
 .third{
     margin-left: 15px;
+}
+.type{
+    width:100%;
+    margin: 0 auto;
+}
+
+#buttons button{
+    padding:5px 10x;
 }
 }
