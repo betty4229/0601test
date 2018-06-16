@@ -20,3 +20,36 @@ $(function(){
 		});
 	});
 });
+
+
+
+$(function(){
+	//宣告變數navPos並帶入nav元素的初始位置
+	var navPos = $("header").offset().top;
+
+	//畫面捲動時
+	$(window).scroll(function(){
+		//比較捲動量與nav元素位置
+		if($(window).scrollTop() > navPos){
+			//滿足條件時將nav元素固定在上方
+			$("header").css("position","fixed");
+		}else{
+			//不滿足條件時將nav元素維持一般配置
+			$("header").css("position","static");
+		}
+	});
+});
+
+
+$("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});

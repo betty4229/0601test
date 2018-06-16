@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Questrial" rel="stylesheet">
+    <title>TheF2E(week2)</title>
+</head>
+
+<body>
+        <header>
+                <nav class="navbar row align-self-center">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="logo col-lg-4 col-sm-4 col-xs-6">
+                            <a href="index.html"><p>My music</p></a>
+                            </div>
+                            <div class="filter col-lg-8 col-sm-8 col-xs-6">
+                                <!-- 搜尋 -->
+                                <div class="search d-none d-sm-block">
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <input type="search" placeholder="search...">
+                                </div>
+                                <!-- 篩選 -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    music filter
+                                </button>
+                                <!-- 內容 -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="exampleModalLongTitle">music filter</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <!-- Country -->
+                                                    <div class="col-sm-3">
+                                                        <h5>Country</h5>
+                                                        <div class="check">
+                                                            <input id="check1" type="checkbox" name="check" />
+                                                            <label for="check1">
+                                                                <p>USA</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check2" type="checkbox" name="check" />
+                                                            <label for="check2">
+                                                                <p>JAPAN</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check3" type="checkbox" name="check" />
+                                                            <label for="check3">
+                                                                <p>KOREA</p>
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                    <!-- Vocalist -->
+                                                    <div class="col-sm-3">
+                                                        <h5>Vocalist</h5>
+                                                        <div class="check">
+                                                            <input id="check4" type="checkbox" name="check" />
+                                                            <label for="check4">
+                                                                <p>Male</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check5" type="checkbox" name="check" />
+                                                            <label for="check5">
+                                                                <p>Female</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check6" type="checkbox" name="check" />
+                                                            <label for="check6">
+                                                                <p>Group</p>
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                    <!-- Type -->
+                                                    <div class="third col-sm-6">
+                                                        <h5>Music Type</h5>
+                                                        <div class="col-sm-6">
+                                                            <div class="check">
+                                                                <input id="check7" type="checkbox" name="check" />
+                                                                <label for="check7">
+                                                                    <p>HIPHOP</p>
+                                                                </label>
+                                                              </div>
+                                                              <div class="check">
+                                                                <input id="check8" type="checkbox" name="check" />
+                                                                <label for="check8">
+                                                                    <p>ROCK</p>
+                                                                </label>
+                                                              </div>
+                                                              <div class="check">
+                                                                <input id="check9" type="checkbox" name="check" />
+                                                                <label for="check9">
+                                                                    <p>JAZZ</p>
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                        <div class="check">
+                                                            <input id="check10" type="checkbox" name="check" />
+                                                            <label for="check10">
+                                                                <p>HOUSE</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check11" type="checkbox" name="check" />
+                                                            <label for="check11">
+                                                                <p>HITS</p>
+                                                            </label>
+                                                          </div>
+                                                          <div class="check">
+                                                            <input id="check12" type="checkbox" name="check" />
+                                                            <label for="check12">
+                                                                <p>TECHNO</p>
+                                                            </label>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                </nav>
+            </header>
+    <main>
+        <div id="contain">
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                <a name="HIPHOP"></a>
+                <div class="intro">
+                <img src="img/hiphop.jpg" alt="img1" style="width:100%;">
+                </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>HIPHOP</span>  /  Supercut</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>            
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="HOUSE"></a>
+                    <div class="intro">
+                    <img src="img/house.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>HOUSE</span>  /  Bon Appétit ft. Migos</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="HOUSE1"></a>
+                    <div class="intro">
+                    <img src="img/house-1.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>HOUSE</span>  /  Too Good At Goodbyes</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="HOUSE2"></a>
+                    <div class="intro">
+                    <img src="img/house-2.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>HOUSE</span>  /  Beautiful Trauma</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="JAZZ"></a>
+                    <div class="intro">
+                    <img src="img/JAZZ.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>JAZZ</span>  /  Sorry Not Sorry</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="JAZZ1"></a>
+                    <div class="intro">
+                    <img src="img/JAZZ-1.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>JAZZ</span>  /  The Cure</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="ROCK"></a>
+                    <div class="intro">
+                    <img src="img/Rock.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>ROCK</span>  /  Malibu</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="col-sm-6 col-xs-12">
+                    <a name="ROCK1"></a>
+                    <div class="intro">
+                    <img src="img/Rock-1.jpg" alt="img1" style="width:100%;">
+                    </div>
+            </li>
+            <li class="col-sm-6 col-xs-12">
+                <div class="intro">
+                <h6><span>ROCK</span>  /  End Game ft. Ed Sheeran</h6> <br>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque consequatur cupiditate velit autem perferendis eaque similique obcaecati id optio, maiores architecto exercitationem odio laboriosam labore perspiciatis. Tempore fuga libero aliquid iusto, magnam culpa inventore ipsa tenetur aperiam placeat dolores vitae temporibus nisi totam nulla provident quasi a officia eius?</p>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="gotop">^</div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
