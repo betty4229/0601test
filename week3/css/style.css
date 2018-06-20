@@ -1,0 +1,137 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+*{
+    /* border: 1px solid #000; */
+}
+
+
+header{
+    top:0;
+    background-image: linear-gradient(180deg, #4481eb 0%, #04befe 100%);
+    width: 100%;
+    z-index: 2;
+}
+.navbar{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.logo p{
+    font-size: 30px;
+    color: #fff;
+    margin:0px;
+    font-family: 'Courgette', cursive;
+}
+#navbarNav p{
+    color: #fff;
+    margin:5px 10px;
+}
+#navbarNav p:hover{
+border-bottom: 3px solid #fff;
+}
+.admin{
+    width: 200px;
+    background-color: transparent;
+    border: transparent;
+}
+button .img{
+    width: 50px;
+    float: left;
+}
+
+button p{
+    float: left;
+    color: #fff;
+    margin: 13px;
+}
+
+/* 時間軸 */
+.timeline{
+    width: 1000px;
+    margin: 0 auto;
+}
+.title h6{
+    float: left;
+    margin-top: 20px;
+    letter-spacing:1px;
+}
+.date{
+    float: right;
+    margin: 16px 18px 0px 0px;    
+}
+.date p{
+    float: left;
+    margin: 0px 5px;
+}
+.fas.fa-caret-right,.fa-caret-down{
+    padding: 0px 10px;
+}
+.date button{
+    padding-left: 10px;
+    background: transparent;
+    border: transparent;
+}
+
+/* 四張圖表 */
+.link{
+    clear: both;
+}
+.link_number{
+    width: 1000px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.link_number li{
+    width: 200px;
+    margin: 10px 20px 10px 15px;
+    padding:15px 10px 0px 10px;
+    float: left;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #4481eb 0%, #04befe 100%);
+}
+.fas.fa-hand-holding-usd,.fa-boxes,.fa-money-bill,.fa-users{
+    float: left;
+    color: #fff;
+    margin-left: 20px;
+}
+.total h3{
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+}
+.total p{
+    clear: both;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* 線條圖 */
+
+#chart_div{
+    clear: both; 
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+
+
+/* 小尺寸 */
+
+@media (max-width: 575px){
+.navbar{
+    width:100%;
+    margin: 0 auto;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.navbar-toggler-icon{
+    color: #04befe;
+}
+}
+
+
+
