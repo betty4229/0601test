@@ -34,15 +34,30 @@ border-bottom: 3px solid #fff;
     background-color: transparent;
     border: transparent;
 }
-button .img{
+.admin:hover{
+    width: 200px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.admin.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.button,.img{
     width: 50px;
     float: left;
 }
 
 button p{
-    float: left;
+    float:left;
     color: #fff;
     margin: 13px;
+}
+
+.admin.dropdown-toggle::after {
+    color: #fff;
+    margin-top: 24px;
 }
 
 /* 時間軸 */
@@ -63,14 +78,29 @@ button p{
     float: left;
     margin: 0px 5px;
 }
-.fas.fa-caret-right,.fa-caret-down{
+.fas.fa-caret-right{
     padding: 0px 10px;
 }
 .date button{
-    padding-left: 10px;
-    background: transparent;
-    border: transparent;
+    margin-top:-7px;
 }
+
+.date.dropdown-toggle::after {
+    color: #fff;
+    margin-top: 24px;
+}
+
+
+.date button,.date button:hover,.date button:focus.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+
+
+    
+
 
 /* 四張圖表 */
 .link{
@@ -108,15 +138,54 @@ button p{
     text-align: center;
 }
 /* 線條圖 */
-
-#chart_div{
+#charts{
     clear: both; 
     width: 900px;
-    margin: 0 auto;
-    padding-top: 50px;
+    margin:0 auto;
 }
-
-
+#charts h6{
+    padding: 20px;
+    color: #4481eb;
+    letter-spacing:1px;
+}
+/* Website */
+.Website,.Orders{
+    width: 50%;
+    float: left;
+}
+.icon,.number,.green{
+    float: left;
+}
+.number{
+    color: #282828;
+    width: 150px;
+    font-size: 32px;
+    margin-right: 20px;
+}
+.green{
+    color: #00ff00;
+}
+.red{
+    color: #ff0000;
+}
+.icon i{
+    width: 50px;
+    text-align: center;
+    float: left;
+    padding: 10px 10px 0px 10px;
+}
+.green i,.red i{
+    float: left;
+    padding: 18px 10px 0px 10px;
+}
+.icon p,.green p,.red p{
+    float: left;
+    font-size: 20px;
+    padding: 10px 0px 0px 0px;
+}
+.icon p{
+    width: 100px;
+}
 
 /* 小尺寸 */
 

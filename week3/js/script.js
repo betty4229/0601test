@@ -44,20 +44,22 @@ var data = new google.visualization.DataTable();
 data.addColumn('date', 'Month');
 data.addColumn('number', "TOTAL REVENUE");
 data.addColumn('number', "TOTAL COST");
+data.addColumn('number', "NET INCOME");
+data.addColumn('number', "MEMBERS");
 
 data.addRows([
-  [new Date(2014, 0),  -.5,  5.7],
-  [new Date(2014, 1),   .4,  8.7],
-  [new Date(2014, 2),   .5,   12],
-  [new Date(2014, 3),  2.9, 15.3],
-  [new Date(2014, 4),  6.3, 18.6],
-  [new Date(2014, 5),    9, 20.9],
-  [new Date(2014, 6), 10.6, 19.8],
-  [new Date(2014, 7), 10.3, 16.6],
-  [new Date(2014, 8),  7.4, 13.3],
-  [new Date(2014, 9),  4.4,  9.9],
-  [new Date(2014, 10), 1.1,  6.6],
-  [new Date(2014, 11), -.2,  4.5]
+  [new Date(2014, 0),  -.5,  5.7,  4.7,  2.7],
+  [new Date(2014, 1),   .4,  8.7,  7.7,  3.7],
+  [new Date(2014, 2),   .5,   12,  11.7,  4.7],
+  [new Date(2014, 3),  2.9, 15.3,  12.2,  6.7],
+  [new Date(2014, 4),  6.3, 18.6,  15.7,  5.7],
+  [new Date(2014, 5),    9, 20.9,  17.7,  7.7],
+  [new Date(2014, 6), 10.6, 19.8,  15.7,  5.7],
+  [new Date(2014, 7), 10.3, 16.6,  10.7,  10.7],
+  [new Date(2014, 8),  7.4, 13.3,  16.4,  12.7],
+  [new Date(2014, 9),  4.4,  9.9,  19.7,  13.7],
+  [new Date(2014, 10), 1.1,  6.6,  20.7,  15.7],
+  [new Date(2014, 11), -.2,  4.5,  22.7,  17.7]
 ]);
 
 var materialOptions = {
