@@ -153,14 +153,19 @@ button p{
     width: 50%;
     float: left;
 }
-.icon,.number,.green{
+.web{
+    display: inline-block;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 7px 0px;
+}
+.icon,.number,.green,.red{
     float: left;
 }
 .number{
     color: #282828;
     width: 150px;
     font-size: 32px;
-    margin-right: 20px;
+    margin:0px  20px;
 }
 .green{
     color: #00ff00;
@@ -185,6 +190,45 @@ button p{
 }
 .icon p{
     width: 100px;
+}
+
+/* Orders */
+.Lasest{
+    display: inline-block;
+}
+.Lasest_img{
+    margin-left: 15px;
+    width: 100px;
+    float: left;
+}
+.Lasest_info{
+    padding:15px 10px 0px 20px;
+    float: left;
+}
+.Lasest_info i{
+    width: 20px;
+    margin-right: 5px;
+    text-align: center;
+    color: #aaaaaa;
+}
+.Lasest_info p{
+    margin-bottom: 5px;
+    color: #aaaaaa;
+}
+.Lasest_total{
+    padding-top: 49px;
+    margin-left: 50px;
+    float:left;
+}
+.Lasest_total h5{
+    color: #282828;
+    font-size: 32px;
+    margin: opx;
+
+}
+.Lasest_total p{
+    margin-bottom: -5px;
+    font-size: 12px;
 }
 
 /* 小尺寸 */
