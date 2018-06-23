@@ -10,6 +10,10 @@ header{
     background-image: linear-gradient(180deg, #4481eb 0%, #04befe 100%);
     width: 100%;
     z-index: 2;
+    font-family: 'Mallanna', sans-serif;
+}
+main{
+    font-family: 'Mallanna', sans-serif;
 }
 .navbar{
     width: 1024px;
@@ -24,10 +28,14 @@ header{
 }
 #navbarNav p{
     color: #fff;
-    margin:5px 10px;
+    padding:10px 20px;
+    margin: 0px;
 }
-#navbarNav p:hover{
-border-bottom: 3px solid #fff;
+li p:hover{
+    border-bottom: 3px solid #fff;
+}
+li p:focus{
+    border-bottom: 3px solid #fff;
 }
 .admin{
     width: 200px;
@@ -53,6 +61,9 @@ button p{
     float:left;
     color: #fff;
     margin: 13px;
+}
+header .dropdown-menu{
+    width: 200px;
 }
 
 .admin.dropdown-toggle::after {
@@ -167,11 +178,27 @@ button p{
     font-size: 32px;
     margin:0px  20px;
 }
+.Popovers{
+    position: absolute;
+    margin: -60px 0px 0px 300px;
+    padding: 10px;
+    float: right;
+    z-index:2;
+    float: right;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    display: none;
+}
 .green{
     color: #00ff00;
+    position: relative;
 }
 .red{
     color: #ff0000;
+    
 }
 .icon i{
     width: 50px;
@@ -246,5 +273,39 @@ button p{
 }
 }
 
+/* ------------------第二頁------------------ */
 
+ /* 篩選checkbox */
+ .checkbox,.check.dropdown{
+     float: left;
+     margin-top: 8px;
+ }
+ .btn-secondary, .btn-secondary:hover {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+}
+.EDIT_SECTION{
+    float: right;  
+    margin-top: 8px;  
+}
+.checkbox{
+    margin: 15px 0px 0px 10px;
+}
+  
+  /*** custom checkboxes ***/
+  
+  input[name="check"] { display:none; } /* to hide the checkbox itself */
+  input[name="check"] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+  }
+  
+  input[name="check"] + label:before { content: "\f0c8"; } /* unchecked icon */
+  input[name="check"] + label:before { letter-spacing:5px;  color: #eee;} /* space between checkbox and label */
+  
+  input[name="check"]:checked + label:before,
+  .checks.checked::before { content: "\f14a"; } /* checked icon */
 
+  input[name="check"]:checked + label:before,
+  .checks.checked::before { letter-spacing:5px; color:#4481eb; } /* allow space for check mark */
