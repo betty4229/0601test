@@ -31,10 +31,10 @@ main{
     padding:10px 20px;
     margin: 0px;
 }
-li p:hover{
+#navbarNav p:hover{
     border-bottom: 3px solid #fff;
 }
-li p:focus{
+#navbarNav p:focus{
     border-bottom: 3px solid #fff;
 }
 .admin{
@@ -276,7 +276,7 @@ header .dropdown-menu{
 /* ------------------第二頁------------------ */
 
  /* 篩選checkbox */
- .checkbox,.check.dropdown{
+ .checkbox,.CHECK.dropdown{
      float: left;
      margin-top: 8px;
  }
@@ -290,7 +290,7 @@ header .dropdown-menu{
     margin-top: 8px;  
 }
 .checkbox{
-    margin: 15px 0px 0px 10px;
+    margin: 14px 0px 0px 10px;
 }
   
   /*** custom checkboxes ***/
@@ -302,10 +302,47 @@ header .dropdown-menu{
   }
   
   input[name="check"] + label:before { content: "\f0c8"; } /* unchecked icon */
-  input[name="check"] + label:before { letter-spacing:5px;  color: #eee;} /* space between checkbox and label */
+  input[name="check"] + label:before { letter-spacing:5px;  color: #cccccc;} /* space between checkbox and label */
   
   input[name="check"]:checked + label:before,
   .checks.checked::before { content: "\f14a"; } /* checked icon */
 
   input[name="check"]:checked + label:before,
-  .checks.checked::before { letter-spacing:5px; color:#4481eb; } /* allow space for check mark */
+  .checks.checked::before { letter-spacing:5px; color:#04befe; } /* allow space for check mark */
+
+  /* orders_nav */
+.orders_nav,.orders_list{
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+}
+.orders_list:hover{
+    background-color: #eeeeee;
+}
+.orders_nav div{
+    float: left;
+    padding: 10px 0px;
+    text-align: left;
+    font-size: 17px;
+}
+.checklist{
+    margin: 5px 0px 0px 11px;
+}
+.orders_list div{
+    float: left;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+footer{
+    width: 1000px;
+    display:block;
+    margin: 0 auto;
+}
+.pagination{
+    float: right;
+    margin: 20px 0px;
+}
