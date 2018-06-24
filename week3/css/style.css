@@ -346,3 +346,50 @@ footer{
     float: right;
     margin: 20px 0px;
 }
+
+/* ------------------第三頁------------------ */
+
+.NEW{
+    float: right;
+    margin-top: 10px;
+}
+.NEW button{
+    background-image: linear-gradient(180deg, #4481eb 0%, #04befe 100%);
+    border: transparent;
+}
+.NEW i{
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+/* 新增商品 */
+.modal-content{
+    width: 900px;
+    margin-left: -50px;
+}
+.modal-header{
+    background-color: #007bff;
+    color: #fff;
+}
+.AddPhoto,.AddInfo{
+    width: 50%;
+    float: left;
+}
+.upload{
+    text-align: center;
+    color: #aaaaaa;
+    padding: 20px 0px 10px 0px;
+    margin: 5px 5px;
+    background-color: #eeeeee;
+}
+.upload p{
+    padding-top: 10px;
+}
+.col-4{
+    float: left;
+    padding:5px;
+}
+.col-6{
+    padding-top: 5px;
+}
+
