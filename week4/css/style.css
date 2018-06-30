@@ -1,0 +1,242 @@
+:root{
+    --yellow:#ffb900;
+    --red1:#fc7d62;
+    --blue1:#93cbd7;
+    --sand:#d2c2a2;
+    --blue2:#7faaaf;
+    --green:#618c1a;
+    --red2:#fe4f74;
+    --brown:#e5bca6;
+    --blue3:#88d4f4;
+    --blue4:#013c99;
+    --bk3:rgba(0,0,0,.3);
+    --bk1:rgba(0,0,0,.1);
+    --fz1:48px;
+    --fz2:24px;
+    --fm: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    outline: 1px solid #f00;
+}
+.wrap{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+.wrap:after{
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+}
+header{
+    height: 300px;
+}
+.pic img{
+    vertical-align: middle;
+}
+.item-content h2{
+    font-family: var(--fm);
+    font-size:var(--fz1);
+    position: absolute;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    z-index: 2;
+}
+.item-content h2:before,.item-content h2:after{
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+.item-content h2:before{
+    top: -15px;
+    height: 14px;
+
+    color:var(--bk3);
+}
+.item-content h2:after{
+    top: -26px;
+    height: 10px;
+    color:var(--bk1);
+}
+
+/* 條紋 */
+
+.item1 .item-content .striped{
+    width: 240px;
+    height: 100px;
+    background-image: linear-gradient(135deg, 
+    var(--yellow) 0px,
+    var(--yellow) 20px,
+
+    transparent 20px,
+    transparent 40px,
+
+    var(--yellow) 40px,
+    var(--yellow) 60px,
+
+    transparent 60px,
+    transparent 80px
+    );
+    background-size: 56px 56px;
+}
+.item4 .item-content .striped{
+    width: 240px;
+    height: 100px;
+    background-image: linear-gradient(135deg, 
+    var(--green) 0px,
+    var(--green) 20px,
+
+    transparent 20px,
+    transparent 40px,
+
+    var(--green) 40px,
+    var(--green) 60px,
+
+    transparent 60px,
+    transparent 80px
+    );
+    background-size: 56px 56px;
+}
+.item5 .item-content .striped{
+    width: 240px;
+    height: 100px;
+    background-image: linear-gradient(135deg, 
+    var(--red2) 0px,
+    var(--red2) 20px,
+
+    transparent 20px,
+    transparent 40px,
+
+    var(--red2) 40px,
+    var(--red2) 60px,
+
+    transparent 60px,
+    transparent 80px
+    );
+    background-size: 56px 56px;
+}
+/* 小字 */
+.item-content .text-sm{
+    font-size: var(--fz2);
+    font-family: var(--fm);
+    font-weight: 700;
+    font-style: italic;
+}
+/* 數字 */
+.item-content .number{
+    font-family: var(--fm);
+    font-size:var(--fz1);
+}
+/* 色塊 */
+.item2 .item-content .color-box{
+    background-color: var(--red1);
+}
+.item3 .item-content .color-box{
+    background-color: var(--sand);
+}
+.item6 .item-content .color-box{
+    background-color: var(--blue2);
+}
+.item7 .item-content .color-box{
+    background-color: var(--blue4);
+}
+
+/* 框 */
+.item1 .item-content .bordered{
+    border: 20px solid var(--yellow);
+}
+.item2 .item-content .bordered{
+    border: 20px solid var(--blue1);
+}
+.item3 .item-content .bordered{
+    border: 20px solid var(--blue2);
+}
+.item4 .item-content .bordered{
+    border: 20px solid var(--green);
+}
+.item5 .item-content .bordered{
+    border: 20px solid var(--red2);
+}
+.item6 .item-content .bordered{
+    border: 20px solid var(--brown);
+}
+.item7 .item-content .bordered{
+    border: 20px solid var(--blue3);
+}
+
+/* item */
+.item{
+    width: 50%;
+    float: left;
+}
+.item .item-content{
+    position: relative;
+}
+.item .item-content{
+    padding-bottom: 83.33333333333333%;
+}
+.item5 .item-content{
+    padding-bottom: 41.66666666666667%;
+}
+/* h2 */
+.item1 h2{
+    transform: translate(0,-20%);
+}
+.item2 h2{
+    top: 82%;
+    transform: translate(50%,0%);
+}
+.item3 h2{}
+.item4 h2{}
+.item5 h2{}
+.item6 h2{}
+.item7 h2{}
+
+/* pic */
+.item .pic img{
+    width: 100%;
+    height: 100%;
+}
+.item .pic{
+    position: absolute;
+}
+.item1 .pic{
+    width: 100%;
+    height: 100%;
+}
+.item2 .pic{
+    width: 50%;
+    height: 50%;
+    transform: translate(50%,50%);
+}
+.item3 .pic{
+    width: 100%;
+    height: 50%;
+}
+.item4 .pic{
+    width: 50%;
+    height: 100%;
+    transform: translate(100%,0%);
+}
+.item5 .pic{
+    width: 50%;
+    height: 100%;
+    transform: translate(100%,0%);
+}
+.item6 .pic{
+    width: 100%;
+    height: 100%;
+}
+.item7 .pic{
+    width: 50%;
+    height: 100%;
+}
