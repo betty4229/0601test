@@ -389,9 +389,6 @@ small{
 /* 小尺寸 */
 
 @media (max-width:480px){
-
-.
-
 .item{
     width: 100%;
     display: block;
