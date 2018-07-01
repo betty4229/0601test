@@ -390,6 +390,8 @@ small{
 
 @media (max-width:480px){
 
+.
+
 .item{
     width: 100%;
     display: block;
@@ -420,3 +422,14 @@ small{
 
 
 }
+
+
+<div class="item-content">
+                    <h2 data-title="LINEN BLAZER">LINEN BLAZER</h2>
+                     <p class="text-sm">Travel</p>
+                    <p class="number">01</p>
+                    <div class="pic">
+                        <img src="img/01.jpg">
+                    </div>
+                    <div class="striped"></div>
+                    <div class="bordered"></div>
