@@ -419,17 +419,4 @@ small{
 .item7 .item-content{
     margin:300px 0px 150px 0px;
 }
-
-
 }
-
-
-<div class="item-content">
-                    <h2 data-title="LINEN BLAZER">LINEN BLAZER</h2>
-                     <p class="text-sm">Travel</p>
-                    <p class="number">01</p>
-                    <div class="pic">
-                        <img src="img/01.jpg">
-                    </div>
-                    <div class="striped"></div>
-                    <div class="bordered"></div>
