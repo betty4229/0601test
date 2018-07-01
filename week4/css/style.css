@@ -395,6 +395,7 @@ small{
 .item{
     width: 100%;
     display: block;
+    float: none;
 }
 .item1 .item-content{
     padding-left: 5px;
