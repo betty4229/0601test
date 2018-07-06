@@ -32,11 +32,6 @@ header h2{
     padding-top: 15px;
     font-weight: 700;
 }
-header .fas.fa-share-alt{
-    color: var(--light); 
-    font-size: var(--fz2);
-    margin-left: 50px;
-}
 
 /* main */
 
