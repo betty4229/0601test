@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+:root{
+    --dark:#062743;
+    --light:#c4ffdd;
+    --fm: 'Oswald', sans-serif;
+    --fz1:40px;
+    --fz2:24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    /* outline: 1px solid #f00; */
+}
+
+/* header */
+
+header{
+    height: 70px;
+    background-color: var(--dark);   
+    color: var(--light); 
+    text-align: center;
+    margin: auto;
+}
+header h2{
+    font-size: var(--fz1);
+    font-family: var(--fm);
+    display: inline-block;
+    padding-top: 15px;
+    font-weight: 700;
+}
+header .fas.fa-share-alt{
+    color: var(--light); 
+    font-size: var(--fz2);
+    margin-left: 50px;
+}
+
+/* main */
+
+main{
+    max-width: 700px;
+    margin: auto;
+    padding-top: 30px;
+}
+.contain_left,.contain_right{
+    width: 50%;
+    float: left;
+}
+.contain_right h3{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.contain_right span{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    word-wrap: break-word;
+    line-height: 200%;
+　　-ms-text-justify: inter-ideograph; /*IE9*/
+　　-webkit-text-align-last: justify; /*Chrome*/
+　　-moz-text-align-last: justify; /*Firefox*/
+}
+.contain_right h4,.contain_right p{
+    font-family: var(--fm);
+    padding: 10px 10px 10px 0px;
+
+}
+.contain_right h4{
+    width: 60px;
+    display: inline-block;
+    float: left;
+    color: var(--dark);
+}
+
+.contain_right p{
+    font-weight: 200;
+    color: #282828;
+}
+.fas.fa-star,.far.fa-star{
+    color: var(--dark);
+    padding: 1px 1px 1px 0px;
+}
+
+
+
+
+
+/* 小尺寸 */
+
+@media screen and (max-width: 480px){
+    .contain_left,.contain_right{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+}
