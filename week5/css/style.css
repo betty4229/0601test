@@ -64,9 +64,7 @@ main{
     font-weight: 100;
     word-wrap: break-word;
     line-height: 200%;
-　　-ms-text-justify: inter-ideograph; /*IE9*/
-　　-webkit-text-align-last: justify; /*Chrome*/
-　　-moz-text-align-last: justify; /*Firefox*/
+
 }
 .contain_right h4,.contain_right p{
     font-family: var(--fm);
@@ -75,7 +73,7 @@ main{
 }
 .contain_right h4{
     width: 60px;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     color: var(--dark);
 }
@@ -204,6 +202,6 @@ figure img{
 .comic_pic li{
     width: 50px;
     margin: 10px 5px;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
 }
