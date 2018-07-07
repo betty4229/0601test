@@ -13,7 +13,7 @@
     padding: 0;
     list-style: none;
     line-height: 1;
-    outline: 1px solid #f00;
+    /* outline: 1px solid #f00; */
 }
 
 /* header */
@@ -190,12 +190,20 @@ select {
 
 /* 圖片 */
 
-figure img{
-    width: 620px;
-    margin: 0 auto;
+figure{
+    width: 500px;
+    margin:0 auto;
+}
+figure img{    
     padding-top: 20px;
 }
+.comic_pic ul{
+    width: 500px;
+    margin: 0 auto;
+}
 .comic_pic li{
+    width: 50px;
+    margin: 10px 5px;
     display: inline-block;
     float: left;
 }
