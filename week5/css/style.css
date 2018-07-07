@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+:root{
+    --dark:#062743;
+    --light:#c4ffdd;
+    --fm: 'Oswald', sans-serif;
+    --fz1:40px;
+    --fz2:24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+
+}
+
+/* header */
+
+header{
+    height: 70px;
+    background-color: var(--dark);   
+    color: var(--light); 
+    text-align: center;
+    margin: auto;
+}
+header a{
+    color: var(--light); 
+}
+header h2{
+    font-size: var(--fz1);
+    font-family: var(--fm);
+    display: inline-block;
+    padding-top: 15px;
+    font-weight: 700;
+
+}
+
+/* main */
+
+main{
+    max-width: 700px;
+    margin: auto;
+    padding-top: 30px;
+}
+.contain_left,.contain_right{
+    width: 50%;
+    float: left;
+}
+.contain_right h3{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 15px 15px 15px 45px;
+    margin: 0px 0px 15px -50px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.contain_right span{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    word-wrap: break-word;
+    line-height: 200%;
+
+}
+.contain_right h4,.contain_right p{
+    font-family: var(--fm);
+    padding: 10px 10px 10px 0px;
+
+}
+.contain_right h4{
+    width: 60px;
+    /* display: inline-block; */
+    float: left;
+    color: var(--dark);
+}
+
+.contain_right p{
+    font-weight: 200;
+    color: #282828;
+}
+.fas.fa-star,.far.fa-star{
+    color: var(--dark);
+    padding: 1px 1px 1px 0px;
+}
+
+/* bottom */
+.contain_bottom{
+    clear: both;
+    padding-top: 20px;
+}
+.chapter{
+    width: 100%;
+    background-color: #eee;
+    height: 80px;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 1px;
+}
+.chapter:hover{
+    box-shadow: 0 6px 10px rgba(36, 37, 38, 0.30);
+    padding: 0px;
+}
+.chapter img,.chapter .title{
+    float: left;
+}
+.chapter .title{
+    margin: 18px 0px 0px 20px;
+    color: #282828;
+    font-family: var(--fm);
+
+}
+.chapter .title p{
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.chapter .title h4{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.chapter .title span{
+    font-weight: 200;
+    margin-left: 10px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--light);
+}
+.chapter .title .vip{
+    background-color:#aaa;
+    color: #fff;
+}
+.fas.fa-unlock,.fas.fa-lock{
+    float: right;
+    color: var(--light);
+    font-size: 20px;
+    margin:30px 40px 0px 0px;
+}
+.fas.fa-lock{
+    color: #aaa;
+}
+
+/* page2 */
+
+.page2{
+    height: 70px;
+    background-color: var(--light);   
+    color: var(--dark); 
+    text-align: center;
+    margin: auto;
+}
+.page2 a{
+    color: var(--dark); 
+}
+header h2{
+    font-size: var(--fz1);
+    font-family: var(--fm);
+    display: inline-block;
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+/* comic */
+.comic_name,.comic_chapter,.comic_page{
+    float: left;
+    margin: 5px;
+}
+
+.comic_name h4{
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 4px;
+}
+.fas.fa-caret-right{
+    margin: 0px 10px;
+}
+select {
+    width:150px;
+    padding:5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    font-family: var(--fm);
+}
+
+/* 圖片 */
+
+figure{
+    width: 500px;
+    margin:0 auto;
+}
+figure img{    
+    padding-top: 20px;
+}
+.comic_pic ul{
+    width: 500px;
+    margin: 0 auto;
+}
+.comic_pic li{
+    width: 50px;
+    margin: 10px 5px;
+    /* display: inline-block; */
+    float: left;
+}
