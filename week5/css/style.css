@@ -13,7 +13,7 @@
     padding: 0;
     list-style: none;
     line-height: 1;
-    /* outline: 1px solid #f00; */
+    outline: 1px solid #f00;
 }
 
 /* header */
@@ -25,12 +25,16 @@ header{
     text-align: center;
     margin: auto;
 }
+header a{
+    color: var(--light); 
+}
 header h2{
     font-size: var(--fz1);
     font-family: var(--fm);
     display: inline-block;
     padding-top: 15px;
     font-weight: 700;
+
 }
 
 /* main */
@@ -47,8 +51,8 @@ main{
 .contain_right h3{
     background-color: var(--light);
     color: var(--dark);
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 15px 15px 15px 45px;
+    margin: 0px 0px 15px -50px;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -85,16 +89,113 @@ main{
     padding: 1px 1px 1px 0px;
 }
 
+/* bottom */
+.contain_bottom{
+    clear: both;
+    padding-top: 20px;
+}
+.chapter{
+    width: 100%;
+    background-color: #eee;
+    height: 80px;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 1px;
+}
+.chapter:hover{
+    box-shadow: 0 6px 10px rgba(36, 37, 38, 0.30);
+    padding: 0px;
+}
+.chapter img,.chapter .title{
+    float: left;
+}
+.chapter .title{
+    margin: 18px 0px 0px 20px;
+    color: #282828;
+    font-family: var(--fm);
 
+}
+.chapter .title p{
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.chapter .title h4{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.chapter .title span{
+    font-weight: 200;
+    margin-left: 10px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--light);
+}
+.chapter .title .vip{
+    background-color:#aaa;
+    color: #fff;
+}
+.fas.fa-unlock,.fas.fa-lock{
+    float: right;
+    color: var(--light);
+    font-size: 20px;
+    margin:30px 40px 0px 0px;
+}
+.fas.fa-lock{
+    color: #aaa;
+}
 
+/* page2 */
 
+.page2{
+    height: 70px;
+    background-color: var(--light);   
+    color: var(--dark); 
+    text-align: center;
+    margin: auto;
+}
+.page2 a{
+    color: var(--dark); 
+}
+header h2{
+    font-size: var(--fz1);
+    font-family: var(--fm);
+    display: inline-block;
+    padding-top: 15px;
+    font-weight: 700;
+}
 
-/* 小尺寸 */
+/* comic */
+.comic_name,.comic_chapter,.comic_page{
+    float: left;
+    margin: 5px;
+}
 
-@media screen and (max-width: 480px){
-    .contain_left,.contain_right{
-        width: 90%;
-        margin: 0 auto;
-        padding-left: 10px;
-    }
+.comic_name h4{
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 4px;
+}
+.fas.fa-caret-right{
+    margin: 0px 10px;
+}
+select {
+    width:150px;
+    padding:5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    font-family: var(--fm);
+}
+
+/* 圖片 */
+
+figure img{
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.comic_pic li{
+    display: inline-block;
+    float: left;
 }
