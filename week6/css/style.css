@@ -1,0 +1,50 @@
+body {
+    background-image: url("/week6/img/bg.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position:0% 80%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    outline: 1px solid #f00;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+.Top_key{
+    padding-top: 50px;
+    width: 50px;
+    margin: auto;
+}
+.Top_step{
+    width: 300px;
+    margin: auto;
+}
+.Top_step p{
+    font-weight: 400;
+    color: #595757;
+}
+.fas.fa-circle{
+    padding: 10px;
+}
+
+/* .Top_title{
+    text-align: center;
+    color: #595757;
+}
+.Top_title h2{
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.Top_title span{
+    font-size: 20px;
+    font-weight: 400;
+} */
