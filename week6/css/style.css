@@ -1,5 +1,7 @@
 body {
-    background: url("/week6/img/bg.png") repeat-x  #f0e5a5;
+    background-image: url("/week6/img/bg.png");
+    background-color: #f0e5a5;
+    background-repeat: repeat-x;
     background-position: bottom left;
     background-attachment: fixed;
 }
