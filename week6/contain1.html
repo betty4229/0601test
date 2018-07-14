@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <title>Week6-validation</title>
+</head>
+
+<body>
+  <header>
+    <div class="Top_key">
+      <img src="img/key.png" alt="key" style="width: 100%;" onclick="location.href='index.html'">
+    </div>
+    <div class="Top_step">
+      <p>
+        <i class="fas fa-check-circle fa-xs"></i>
+        </i>
+        <div class="Step_line"></div>
+        <i class="fas fa-check-circle fa-xs"></i>
+        <div class="Step_line"></div>
+        <i class="far fa-circle fa-xs"></i>
+        <div class="Step_line"></div>
+        <i class="far fa-circle fa-xs"></i>
+      </p>
+    </div>
+    <div class="Top_title">
+      <h2>General Infomation</h2>
+      <span>Tell us who you are!</span>
+    </div>
+  </header>
+  <main>
+    <div class="name">
+      <ul>
+        <li>Name (optional)
+          <br>
+          <input type="text" name="firstname" value="Example Name">
+        </li>
+        <li>Phone*
+          <br>
+          <input type="text" name="Phone" value="0912 345 678">
+        </li>
+      </ul>
+    </div>
+    <div class="date">
+      <form name="reg_testdate">
+        Birth Date (optional)
+        <br>
+        <select name="YYYY" onchange="YYYYDD(this.value)">
+          <option value="YYYY"></option>
+        </select>
+        <select name="MM" onchange="MMDD(this.value)">
+          <option value="MM"></option>
+        </select>
+        <select name="DD">
+          <option value="DD"></option>
+        </select>
+      </form>
+    </div>
+    <div class="address">
+      <form name="000">
+        Address*
+        <br>
+        <select name="City" onchange="YYYYDD(this.value)">
+          <option value="City">City</option>
+        </select>
+        <select name="Dist" onchange="MMDD(this.value)">
+          <option value="Dist">Dist</option>
+        </select>
+        <input type="text" name="address" value="Address Detail">
+    </div>
+
+
+  </main>
+  <footer>
+    <input type="button" value="SUBMIT & NEXT" onclick="location.href='contain1.html'">
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,17 +1,18 @@
 body {
-    background-image: url("/week6/img/bg.png");
-    background-repeat: repeat-x;
+    background: url("/week6/img/bg.png") repeat-x  #f0e5a5;
+    background-position: bottom left;
     background-attachment: fixed;
-    background-position:0% 80%;
 }
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     line-height: 1;
-    outline: 1px solid #f00;
+    /* outline: 1px solid #f00; */
     font-family: 'Montserrat', sans-serif;
 }
+
+/* header */
 
 header{
     width: 100%;
@@ -20,31 +21,166 @@ header{
 }
 .Top_key{
     padding-top: 50px;
-    width: 50px;
+    width: 40px;
     margin: auto;
 }
 .Top_step{
-    width: 300px;
-    margin: auto;
+    width: 228px;
+    margin: 0 auto;
+    padding-top: 30px;
 }
-.Top_step p{
-    font-weight: 400;
-    color: #595757;
+.Step_line{
+    float: left;
+    width: 60px;
+    border-bottom: 1px solid #d8a852;
+    padding-top: 10px;
 }
-.fas.fa-circle{
-    padding: 10px;
+.fas.fa-check-circle,.far.fa-circle{
+    float: left;
+    padding: 5px 0px 5px 0px;
+    color:#d8a852;
+    
 }
 
-/* .Top_title{
+.Top_title{
+    padding-top: 30px;
     text-align: center;
     color: #595757;
 }
 .Top_title h2{
-    padding-top: 10px;
+    padding: 10px 0px;
     font-weight: 700;
     font-size: 30px;
+    letter-spacing: 2px;
 }
 .Top_title span{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
-} */
+    letter-spacing: 1px;
+}
+/* main */
+main{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+form{
+    width: 228px;
+    margin: 0 auto;
+    padding: 30px 30px 30px 0px ;
+}
+form input{
+    width: 240px;
+    margin: 10px 0px;
+    padding:5px 0px 5px 15px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+}
+
+/* FOOTER */
+
+footer{
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer input{
+    font-size: 12px;
+    margin-left: 30px;
+    padding:10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #d8a852;
+    border: transparent;
+}
+
+/* contain1 */
+.name ul{
+    margin: 30px 0px 0px 50px;
+}
+ul li{
+    float: left;
+    padding:0px 0px 0px 4px;
+}
+li input{
+    margin: 10px 0px;
+    padding:5px 0px 5px 15px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+}
+.date form,.address form{
+    width: 378px;
+    margin: 0 auto;
+    padding:0px 0px 0px 5px ;
+}
+.date form select{
+    margin: 10px 0px 10px 0px;
+    padding:5px 45px 5px 13px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+}
+.address form select{
+    margin: 10px 0px 0px 0px;
+    padding:5px 118px 5px 13px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+}
+.address form input{
+    width: 349px;
+    margin: 10px 0px 40px 0px;
+    padding:6px 0px 6px 16px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+}
+
+
+/* 小尺寸 */
+
+@media (max-width: 575px){
+    .name ul{
+        width: 250px;
+        margin: 0 auto;
+        padding: 20px 0px 0px 0px;
+    }
+    ul li{
+        clear: both;
+    }
+    li input{
+        width: 230px;
+        margin:5px 0px 5px 0px;
+        padding: 5px 0px 5px 10px;
+    }
+    .date form{
+        margin-top: 10px;
+        width: 250px;
+        margin: auto;
+        clear: both;
+        padding: 20px 0px 0px 0px;
+    }
+    .date form select,.address form select{
+        width: 250px;
+        margin:5px 0px 0px 0px;
+        padding: 5px 0px 5px 10px;
+    }
+    .address form{
+        margin-top: 10px;
+        width: 250px;
+        margin: auto;
+        clear: both;
+        padding: 20px 0px 0px 0px; 
+    }
+    .address form input{
+        width: 240px;
+        margin:5px 0px 30px 0px;
+        padding: 5px 0px 5px 10px;
+    }
+
+}
