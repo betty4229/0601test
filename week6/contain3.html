@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>Week6-validation</title>
+    <style type="text/css">
+        body {
+            background-image: url(img/bg.png);
+            background-repeat: repeat-x;
+            background-color: #e9d988;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Top_key">
+            <img src="img/key.png" alt="key" style="width: 100%;" onclick="location.href='index.html'">
+        </div>
+        <div class="Top_step">
+            <p>
+                <i class="fas fa-check-circle fa-xs"></i>
+                </i>
+                <div class="Step_line"></div>
+                <i class="fas fa-check-circle fa-xs"></i>
+                <div class="Step_line"></div>
+                <i class="fas fa-check-circle fa-xs"></i>
+                <div class="Step_line"></div>
+                <i class="fas fa-check-circle fa-xs"></i>
+            </p>
+        </div>
+        <div class="Top_title">
+            <h2>Payment Method</h2>
+            <span>Add your credit card infomation! </span>
+        </div>
+    </header>
+    <main>
+        <div class="Payment">
+            <div class="Card_number">
+                <form>
+                    Card Number
+                    <br>
+                    <input type="text" name="address" value="1234 5678 9012 3456">
+                </form>
+                <i class="fab fa-cc-visa"></i>
+
+            </div>
+
+            <div class="Card_name">
+                <ul>
+                    <li>Cardholder Name
+                        <br>
+                        <input type="text" name="firstname" value="EXAMPLE NAME">
+                    </li>
+                    <li>Bank Name
+                        <br>
+                        <input type="text" name="Phone" value="EXAMPLE BANK">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="Card_date">
+            <div class="CVV">
+                <form>
+                    CVV
+                    <br>
+                    <input type="text" name="Number" value="123">
+                </form>
+            </div>
+            <div class="Expire_date">
+                <form>
+                    Expire_date
+                    <br>
+                    <select name="month">
+                        <option value="MM">MM</option>
+                    </select>
+                    <select name="date">
+                        <option value="DD">DD</option>
+                    </select>
+                </form>
+            
+        </div>
+
+    </div>
+    </main>
+    <footer>
+        <div class="DONE"><input type="button" value="DONE" onclick="location.href='final.html'"></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

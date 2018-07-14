@@ -136,6 +136,85 @@ li input{
     border-radius: 50px;
     border: transparent;
 }
+/* contain2 */
+.upload{
+    width: 100%;
+    max-width: 282px;
+    margin: 30px auto;
+    padding: 30px 30px 80px 30px;
+    border: 1px solid #d8a852;
+    border-radius: 10px;
+}
+.far.fa-images,.tip{
+    float: left;
+    margin: 10px;
+    color: #d8a852;
+}
+.upload input{
+    display: none;
+}
+/* contain3 */
+.Card_number,.Card_name,.Card_number form,.Card_date{
+    width: 400px;
+    margin: 0 auto;
+}
+.Card_number form{
+    padding: 30px 0px 0px 15px ;
+    position: relative;
+}
+.Card_number form input{
+    width: 350px;
+}
+.Card_number i{
+    width: 30px;
+    margin:0 auto;
+    position: relative;
+    top: -30px;
+    left:340px;
+    color: #aaa;
+}
+.Card_name{
+    padding: 0px 0px 0px 21px ; 
+}
+.CVV input{
+    width: 100px;
+    margin:5px 0px 30px 0px;
+    float: left;
+}
+.Expire_date select{
+    width: 120px;
+    padding:5px 5px;
+    margin:5px 5px 30px 0px;
+    color: #aaa;
+    border-radius: 50px;
+    border: transparent;
+    float: left;
+}
+.CVV form{
+    width: 100px;
+    padding: 10px 0px 0px 15px;
+    float: left;
+}
+.Expire_date form{
+    width: 250px;
+    float: left;
+    padding: 10px 0px 0px 20px;
+}
+.DONE{
+    width: 77px;
+    margin: 0 auto;
+}
+.DONE input{
+    margin: 0;
+}
+.finish{
+    text-align: center;
+    padding: 30px 30px 80px 30px;
+    color: #d8a852;
+}
+.finish p{
+    margin-top:30px;
+}
 
 
 /* 小尺寸 */
@@ -178,5 +257,45 @@ li input{
         margin:5px 0px 30px 0px;
         padding: 5px 0px 5px 10px;
     }
+    .upload{
+        width: auto;
+        margin: 30px auto;
+        padding: 30px 0px 80px 0px;
+    }
+    .Card_number,.Card_name,.Card_number form,.Card_date{
+        width:250px;
+    }
+    .Card_number form{
+        padding: 20px 0px 0px 0px ;
+    }
+    .Card_number form input{
+        width: 230px;
+        margin: 5px 0px 0px 0px;
+    }
+    .Card_number i{
+        top: -20px;
+        left: 220px;
+    }
+    .Card_name{
+        width: 250px;
+        padding: 0px 0px 0px 0px ; 
+    }
+    .CVV input{
+        width: 228px;
+        margin:5px 0px 5px 0px;
+    }
+    .Expire_date select{
+        width: 240px;
+        padding:5px 5px;
+        margin:5px 5px 5px 0px;
 
+    }
+    .CVV form{
+        width: 250px;
+        padding: 5px 0px 0px 4px;
+    }
+    .Expire_date form{
+        width: 250px;
+        padding: 5px 0px 30px 5px;
+    }
 }
