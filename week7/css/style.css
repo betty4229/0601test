@@ -5,7 +5,16 @@ html,body{
     align-items:center;
 }
 
+h2{
+    z-index: 5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+}
+
 #mycanvas
     {
-        border:3px solid #000;
+    /* border:3px solid #000; */
+    background-color: #001D2E;
     }
