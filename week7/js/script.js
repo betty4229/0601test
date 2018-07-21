@@ -3,6 +3,7 @@ var ctx = canvas.getContext("2d")
 
 canvas.width= 600
 canvas.height= 400
+
 // 格線
 // function draw(){
 //     ctx.beginPath()
@@ -19,6 +20,8 @@ canvas.height= 400
 //     ctx.stroke()
 // }
 // draw()
+
+
 
 // 圓形橘色
 ctx.beginPath()
@@ -135,4 +138,22 @@ ctx.fill()
 ctx.font="12px Arial"
 ctx.fillStyle = "#ffffff40"
 ctx.textAlign = "center"
-ctx.fillText("系統維護中...",300,290)
+ctx.fillText("系統維護中...",295,290)
+
+
+// 在100，100点绘制一个宽50，高50的旋转矩形。
+var baseRadian = 0;
+setInterval( function() {
+    // 防止图形飞走，所以先把当前坐标轴的状态保存起来
+    ctx.save();
+    // 清除上一次的矩形
+    ctx.clearRect(332, 272, 30, 30 );
+    // 平移到矩形的中心
+    ctx.translate( 342, 284 );
+    // 旋转坐标系
+    ctx.rotate( baseRadian += Math.PI / 180 * 4 );
+    // 绘制图形
+    ctx.fillRect( -5, -5, 10, 10 );
+    // 平移旋转之后，回滚到最初的坐标轴状态
+    ctx.restore();
+}, 50 );
