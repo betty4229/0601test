@@ -1,0 +1,463 @@
+    html,body{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #001D2E;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .wrap{
+    width: 1024px;
+    height: 768px;
+    background-color: #1469FF;
+    }
+    /* 文字 */
+    h6{
+    color: #FFF;
+    font-size: 24px;
+    position: relative;
+    animation:h6 5s infinite;
+    }
+    @keyframes h6{
+    0%{
+    top:219px;
+    left: 390px;
+    }
+    25%{
+    top:219px;
+    left: 390px;
+    }
+    50%{
+    top:219px;
+    left: 390px;
+    }
+    100%{
+    left:530px;
+    top: 81px;
+    }
+    }
+
+    h2{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    position: relative;
+    animation:h2 5s infinite;
+    }
+    @keyframes h2{
+    0%{
+    top:163px;
+    left:0px;
+    }
+    25%{
+    top:163px;
+    left:0px;
+    }
+    50%{
+    top:163px;
+    left:0px;
+    }
+    100%{
+    left:170px;
+    top: 40px;
+    }
+    }
+    /* 重點三角形 */
+    .blue_1{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #0027C8;
+    position: relative;
+    animation:blue_1 5s infinite;
+    }
+    @keyframes blue_1{
+    0%{
+    top:-500px;
+    left:700px;
+    }
+    25%{
+    top:-140px;
+    left:700px;
+    }
+    50%{
+    top:-140px;
+    left:700px;
+    }
+    100%{
+    top:5px;
+    left:530px;
+    }
+    } 
+    .blue_2{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #0027C8;
+    position: relative;
+    animation:blue_2 5s infinite;
+    }
+    @keyframes blue_2{
+    0%{
+    top:-500px;
+    left:950px;
+    }
+    50%{
+    top:0px;
+    left:950px;
+    }
+    100%{
+    top:30px;
+    left:530px;
+    }
+    } 
+    .blue_3{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #0027C8;
+    position: relative;
+    animation:blue_3 5s infinite;
+    }
+    @keyframes blue_3{
+    0%{
+    top:-500px;
+    left:200px;
+    }
+    50%{
+    top:100px;
+    left:200px;
+    }
+    100%{
+    top:50px;
+    left:530px;
+    }
+    } 
+    .blue_4{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #0027C8;
+    position: relative;
+    animation:blue_4 5s infinite;
+    }
+    @keyframes blue_4{
+    0%{
+    top:-500px;
+    left:250px;
+    }
+    50%{
+    top:-200px;
+    left:250px;
+    }
+    100%{
+    top:-500px;
+    left:250px;
+    }
+    } 
+    /* 藍字 */
+    .h3_1{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    animation:h3_1 5s infinite;
+    }
+    @keyframes h3_1{
+    0%{
+    top:-230px;
+    left:196px;
+    color: transparent;
+
+    }
+    70%{
+    top:-230px;
+    left:196px;
+    color: transparent;
+    }
+    100%{
+    top:-230px;
+    left:196px;
+    color: #0027C8;
+    }
+    } 
+    .h3_2{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    animation:h3_2 5s infinite;
+    }
+    @keyframes h3_2{
+    0%{
+    top:-230px;
+    left:210px;
+    color: transparent;
+
+    }
+    70%{
+    top:-230px;
+    left:210px;
+    color: transparent;
+    }
+    100%{
+    top:-230px;
+    left:210px;
+    color: #0027C8;
+    }
+    } 
+    .h3_3{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    animation:h3_3 5s infinite;
+    }
+    @keyframes h3_3{
+    0%{
+    top:-235px;
+    left:236px;
+    color: transparent;
+
+    }
+    70%{
+    top:-235px;
+    left:236px;
+    color: transparent;
+    }
+    100%{
+    top:-235px;
+    left:236px;
+    color: #0027C8;
+    }
+    } 
+    /* 黑色三角形 */
+    .black_1{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #000000;
+    position: relative;
+    animation:black_1 5s infinite;
+    }
+    @keyframes black_1{
+    0%{
+    top:-800px;
+    left:20px;
+    }
+    50%{
+    top:-400px;
+    left:20px;
+    }
+    100%{
+    top:-800px;
+    left:20px;
+    }
+    }
+    .black_2{
+    width:0;
+    height:0;
+    border-width:0 28px 48px ;
+    transform:rotate(180deg);
+    border-style:solid;
+    border-color:transparent transparent #000000;
+    position: relative;
+    animation:black_2 5s infinite;
+    }
+    @keyframes black_2{
+        0%{
+        top:-800px;
+        left:120px;
+        }
+        50%{
+        top:-680px;
+        left:120px;
+        }
+        100%{
+        top:-800px;
+        left:120px;
+        }
+    }
+    .black_3{
+        width:0;
+        height:0;
+        border-width:0 28px 48px ;
+        transform:rotate(180deg);
+        border-style:solid;
+        border-color:transparent transparent #000000;
+        position: relative;
+        animation:black_3 5s infinite;
+        }
+        @keyframes black_3{
+            0%{
+            top:-800px;
+            left:800px;
+            }
+            50%{
+            top:-400px;
+            left:800px;
+            }
+            100%{
+            top:-800px;
+            left:800px;
+            }
+        }
+        /* 大塊三塊 */
+        .big_blue{
+            width:0;
+            height:0;
+            /* border-width:0 200px 350px ; */
+            /* transform:rotate(180deg); */
+            border-style:solid;
+            border-color:transparent transparent #0027C8;
+            position: relative;
+            animation:big_blue 5s infinite;
+            z-index: 3;
+            }
+            @keyframes big_blue{
+            0%{
+                border-width:0 200px 350px ;
+            top:30px;
+            left:310px;
+            }
+            50%{
+                border-width:0 200px 350px ;
+            top:-370px;
+            left:310px;
+            }
+            80%{
+            border-width:0 150px 280px ;
+            top:-650px;
+            left:120px;
+            }
+            90%{
+                border-width:0 150px 280px ;
+                top:-600px;
+                left:120px;
+                }
+            100%{
+                border-width:0 150px 280px ;
+                top:-560px;
+                left:120px;
+                }
+            }
+            .big_black{
+                width:0;
+                height:0;
+                position: relative;
+                clear: both;
+                border-style:solid;
+                border-width:0 150px 280px ;
+                border-color:transparent transparent #000000;
+                animation:big_black 5s infinite;
+                }
+                @keyframes big_black{
+                0%{
+                    top:-500px;
+                    left:450px;
+                    transform:rotate(0deg);
+                    }
+                    50%{
+                        top:-800px;
+                        left:450px;
+                    transform:rotate(0deg);
+                    }
+                    100%{
+                        top:-900px;
+                        left:150px;
+                    transform:rotate(-180deg);
+                    }
+                }
+            .big_white{
+                width:300px;
+                height:280px;
+                background:#ffffff;
+                -webkit-clip-path:polygon(0% 100%, 50%  0%,100% 100%);
+                position: relative;
+                clear: both;
+                animation:big_white 5s infinite;
+                z-index: 2;
+                }
+                @keyframes big_white{
+                0%{
+                top:-500px;
+                left:350px;
+                transform:rotate(0deg);
+                }
+                50%{
+                top:-1100px;
+                left:360px;
+                transform:rotate(0deg);
+                }
+                100%{
+                top:-1300px;
+                left:140px;
+                transform:rotate(180deg);
+                }
+                }
+                /* 文字與按鈕 */
+                .white_p{
+                    width: 380px;
+                    font-size: 20px;
+                    position: relative;
+                    clear: both;
+                    top:-1230px;
+                    left:540px;
+                    animation:white_p 5s infinite;
+                    }
+                    @keyframes white_p{
+                    0%{
+                    color: transparent;
+                    }
+                    70%{
+                    color: transparent;
+                    }
+                    100%{
+                    color: #FFFFFF;
+                    }
+                    }
+                    .button_p{
+                    width: 380px;
+                    height: 50px;
+                    font-size: 20px;
+                    text-align: center;
+                    position: relative;
+                    clear: both;
+                    top:-1220px;
+                    left:540px;
+                    border-radius: 30.5px;
+                    animation:button_p 5s infinite;
+                    } 
+                    .button_p p{
+                        margin-top: 10px;
+                    }
+                    @keyframes button_p{
+                        0%{
+                        color: transparent;
+                        border: 2px solid transparent;                    
+                        }
+                        70%{
+                        color: transparent;
+                        border: 2px solid transparent;
+                        }
+                        100%{
+                        color: #FFFFFF;
+                        border: 2px solid #FFFFFF;
+                        }
+                        } 
+           
