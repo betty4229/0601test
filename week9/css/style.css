@@ -1,0 +1,274 @@
+*{
+    /* outline: 1px solid red; */
+}
+    
+html,body{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .wrap{
+    width: 1024px;
+    height: 768px;
+    background-image: linear-gradient(to right,  #250060 0%, #070011 52%,  #250060 100%);
+    }
+    .wrap_left,.wrap_center,.wrap_right,.wrap_info{
+        height: 768px;
+        float: left;
+    }
+    /* 左邊 */
+    .wrap_left h2{
+        position: relative;
+        font-size: 48px;
+        font-style:italic;
+        font-weight: 900;
+        color: #FF0093;
+        top: 10px;
+        left: 52px;
+    }
+    .wrap_left .slogan{
+        width: 180px;
+        display:block;
+        position: relative;
+        background-color: #8000FF;
+        top: -10px;
+        left: 52px;
+    }
+    .wrap_left h4{
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 4px 8px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #250060;
+    }
+    .wrap_left .underline{
+        width: 220px;
+        position: relative;
+        left: 52px;
+        top: -25px;
+    }
+    h3{
+        margin:0;
+        padding-top: 3px;
+        letter-spacing: 1px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .underline h3{
+        border-bottom: 2px solid #8000FF;
+
+    }
+    .ship_big{
+        position: relative;
+        animation:ship_big 5s infinite;        
+    }
+    @keyframes ship_big{
+        0%{
+        top:-15px;
+        left: 70px;
+        }
+        50%{
+        top:-15px;
+        left: 30px;
+        }
+        100%{
+        top:-15px;
+        left: 70px;
+        }
+    }
+    .ship_big,.talk{
+        position: relative;
+        top:-10px;
+        left: 52px;
+    }
+    .talk{
+        width: 300px;
+        height: 181px;
+        background-image: url(../img/talk.png);
+       }
+    .talk p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        padding:40px 20px 20px 20px;
+        color: #fff;
+        float: left;
+    }
+    .talk p span{
+        color: #FF0093;
+    }
+
+    /* 中間 */
+    .wrap_center{
+        position: relative;
+        top: 50px;
+    }
+    .icon {
+        position: relative;
+        left: 72px; 
+        z-index: 5;
+    }    
+    .square{
+        position: relative;
+        width: 38px;
+        left: 104px;
+        margin-top: -15px;
+        background-color: #35006A;
+    }
+    .square_1{
+        height:25px;
+    }
+    .square_2{
+        height:115px;
+    }
+    .square_3{
+        height:115px;
+    }
+    .triangle{
+        position: relative;
+        width: 38px;
+        left: 94px;
+        width:0;
+        height:0;
+        border-width:0 28px 18px ;
+        transform:rotate(180deg);
+        border-style:solid;
+        border-color:transparent transparent #35006A;
+    }
+    /* 右邊 */
+    .wrap_right{
+        position: relative;
+        top: 50px;
+        left: 90px;
+    }
+    /* 區塊 */
+    .skills{
+        clear: both;
+    }
+    .skill{
+        float: left;
+        padding:5px; 
+    }
+    /* 內容 */
+    .skill_img img{
+        width: 28px;
+        padding: 10px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .skill_span img{
+        width: 28px;
+        padding: 10px;
+        background-color: #6900D1;
+        border: 1px solid #FF0093;
+    }
+    .skill_img.span img{
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        animation:skill_img 2s infinite;        
+    }
+    @keyframes skill_img{
+        0%{
+        top:-5px;
+        left: 0px;
+        }
+        50%{
+        top:0px;
+        left: 0px;
+        }
+        100%{
+        top:-5px;
+        left: 0px;
+        }
+    }
+  
+    .skill_img.span img:hover{
+        background-color: #6900D1;
+        border:2px solid #FF0093; 
+    }
+    .skill_info{
+    padding: 3px;
+    height: 18px;
+    }
+    .skill_info img,.skill_info p{
+        float: left;
+        margin: 0px;
+        color: #fff;
+    }
+    .skill_info img{
+        width: 18px;
+    }
+    .skill_info p{
+        padding: 1px 1px 1px 2px;
+    }
+
+ /* 說明區塊 */
+
+ .wrap_info{
+        position: relative;
+        width: 280px;
+        top: 50px;
+        left: 110px;
+ }
+ .top{
+    text-align: center;
+    height: 290px;
+    background-color:#8000FF;
+ }
+
+ .top img{
+     width: 130px;
+     margin: 20px 20px 20px 20px;
+ }
+
+ .bottom{
+    text-align: center;
+    height: 370px;
+    background-color:#6900D1;
+ }
+
+ .bottom img{
+    width: 30px;
+    margin: 50px 20px 0px 20px;
+}
+.bottom p{
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 10px 30px 10px;
+}
+.bottom h6{
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px 0px;
+    margin:10px;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.bottom h6:hover{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #6900D1;
+}
+/* 第二頁 */
+.bottom.span img{
+    width: 30px;
+    margin: 10px 20px 0px 20px;
+}
+.bottom.span p{
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 10px 10px 10px;
+}
+.managers h6{
+    border: 1px solid #FF0093;
+    background-color: #FF0093;
+    color: #fff;
+}
+
